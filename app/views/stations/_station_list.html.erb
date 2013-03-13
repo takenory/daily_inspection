@@ -1,0 +1,9 @@
+<div id="station_list">
+  <ul id="station_table_area">
+    <% @stations.each do |station| %>
+      <li class="station_selector">
+        <%= link_to station.name, {:action => action_name, :id => station.id} %>
+      </li>
+    <% end %>
+  </ul>
+</div>
